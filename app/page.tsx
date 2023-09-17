@@ -1,3 +1,6 @@
+async function fetchBlogs() {
+  
+}
 
 export default function Home() {
   return (
