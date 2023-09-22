@@ -41,7 +41,7 @@ export default async function Home() {
               </div>
               <Link
                 href={`/blog/edit/${post.id}`}
-                className="px-4 py-2 text-center text-xl bg-slate-900 rounded-md font-semibold text-slate-200"
+                className="px-4 py-1 text-center text-xl bg-slate-900 rounded-md font-semibold text-slate-200"
               >
                 Edit
               </Link>
@@ -51,6 +51,10 @@ export default async function Home() {
               <blockquote className="font-bold text-slate-700">
                 {new Date(post.date).toDateString()}
               </blockquote>
+            </div>
+
+            <div className="mr-auto my-1">
+              <p>{post.description}</p>
             </div>
           </div>
         ))}
